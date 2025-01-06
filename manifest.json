@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "No Youtube Shorts",
+    "version": "0.1",
+    "description": "Removes shorts from youtube",
+    "permissions": ["scripting"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["main.js"]
+      }
+    ],
+    "icons": {
+      "16": "icon_128.png",
+      "48": "icon_128.png",
+      "128": "icon_128.png"
+    }
+  }
+  
